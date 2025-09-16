@@ -1,0 +1,92 @@
+:root {
+    --blue-1: rgb(13, 164, 235);
+    --blue-2: rgb(6, 115, 179);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    height: 55px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--blue-1);
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.button_back {
+    height: 44px;
+    width: 44px;
+    background: fixed;
+    margin-left: 5px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.button_back:hover {
+    width: 100px;
+    background: white;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    gap: 20pt;
+}
+
+.name {
+    order: 1;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Calibri;
+    font-variant: small-caps;
+    background-clip: border-box;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20pt 0 50pt 0;
+}
+
+.picture {
+    order: 2;
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    -webkit-box-shadow: 11px 13px 32px -12px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 11px 13px 32px -12px rgba(66, 68, 90, 1);
+    box-shadow: 11px 13px 32px -12px rgba(66, 68, 90, 1);
+    background-size: cover;
+}
+
+
+.information {
+    order: 3;
+    height: auto;
+    width: 55%;
+    font-family: Calibri;
+    font-size: larger;
+    color: var(--blue-1);
+    margin-top: 50pt;
+}
+
+span {
+    color: var(--blue-2);
+    font-weight: bold;
+}

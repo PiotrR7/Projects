@@ -1,0 +1,67 @@
+html,body{
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    background: linear-gradient(to right, red , orange );
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.tloPrzyciskow{
+    height: 80%;
+    width: 30%;
+    display: flex;
+    display: grid;
+    justify-items: center;
+    align-content: space-around;
+    align-self: center;
+    background: rgba(255, 255, 255, 0.336);
+    border-radius: 20px;
+}
+
+.poleTekstowe{
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.konsola{
+    height: 100%;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.poleLiczby{
+    height: 150%;
+    width: 30%;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.przycisk{
+    height: 150%;
+    width: 20%;
+    border-radius: 10px;
+    border: 0px;
+}
+
+
+
+
+
+@media screen and (max-width:1200px){
+    html,body{
+        background: linear-gradient(to bottom, red , orange );
+    }
+    
+    .tloPrzyciskow{
+        width: 80%;
+    }
+
+    .przycisk{
+        width: 80%;
+    }
+}

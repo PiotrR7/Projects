@@ -1,0 +1,98 @@
+:root {
+    --dark-gray: rgb(48, 48, 48);
+    --gray: rgb(54, 54, 54);
+    --light-gray: rgb(60, 60, 60);
+
+    --glow-orange: rgb(255, 145, 0);
+
+    --font-color: white;
+}
+
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+body, html {
+    width: 100%;
+    height: 200vh;
+
+    font-family: "Outfit", sans-serif;
+    background: var(--dark-gray);
+}
+a {
+    color: var(--font-color);
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 20px 0 150px;
+
+    position: fixed;
+
+    background: var(--dark-gray);
+    -webkit-box-shadow: 0px 7px 24px 0px var(--light-gray);
+    -moz-box-shadow: 0px 7px 24px 0px var(--light-gray);
+    box-shadow: 0px 7px 24px 0px var(--light-gray);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+header>.logo {
+    width: 64px;
+    height: 64px;
+}
+header>.menu, header>.header_buttons {
+    width: auto;
+    height: 100%;
+    gap:  50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header>.menu>a {
+    position: relative;
+    text-decoration: none;
+    padding: 12px 0 12px;
+}
+header>.menu>a::before {
+    width: 100%;
+    height: 2px;
+    border-radius: 50%;
+    bottom: 0;
+    position: absolute;
+
+    content: '';
+    background-color: var(--glow-orange);
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+header>.menu>a:hover {
+    color: var(--glow-orange);
+}
+header>.menu>a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+header>.header_buttons>a {
+    padding: 12px 20px;
+    border-radius: 6px;
+    background: rgb(255,145,0);
+    border: 2px solid transparent;
+    transition: .3s ease-in-out;
+}
+header>.header_buttons>a:hover {
+    background: none;
+    border-color: var(--glow-orange);
+    color: var(--glow-orange);
+    transform: translateY(-5px);
+    -webkit-box-shadow: 8px 8px 17px 0px var(--light-gray);
+-moz-box-shadow: 8px 8px 17px 0px var(--light-gray);
+box-shadow: 8px 8px 17px 0px var(--light-gray);
+}

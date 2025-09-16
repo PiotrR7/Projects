@@ -1,0 +1,5 @@
+NODE
+
+Uruchomienie js:
+    1) cd (lokalizacja pliku)
+    2) node (nazwa pliku)

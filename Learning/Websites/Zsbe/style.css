@@ -1,0 +1,114 @@
+:root {
+    --black1: #000;
+    --gray1: #383838;
+    --gray2: #525252;
+    --white1: #ffff;
+    --white2: #f5f5f5;
+    --red1: #861d1d;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body, html {
+    background-color: var(--white1);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background-color: var(--white1);
+    height: 70%;
+    width: 65%;
+    padding: 70px 70px 70px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    -webkit-box-shadow: -1px -1px 51px -32px rgba(145, 145, 158, 1);
+    -moz-box-shadow: -1px -1px 51px -32px rgba(145, 145, 158, 1);
+    box-shadow: -1px -1px 51px -32px rgba(145, 145, 158, 1);
+}
+header {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.name {
+    height: fit-content;
+    width: fit-content;
+    color: var(--gray1);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
+}
+.header-buttons {
+    height: 26px;
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.info-display {
+    height: 85%;
+    width: 50%;
+}
+.image {
+    height: 85%;
+    width: 50%;
+    background-clip: border-box;
+    display: flex;
+    justify-content: flex-end;
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 55px;
+    color: var(--gray1);
+    margin-top: 50px;
+}
+b {
+    color: var(--red1);
+}
+p{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--gray2);
+    margin-top: 50px;
+}
+
+button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.menu {
+    height: 40px;
+    width: 100px;
+    background-color: var(--red1);
+    color: var(--white1);
+}
+.about {
+    height: 40px;
+    width: 100px;
+    background: none;
+    color: var(--gray1);
+    border: 1px solid var(--gray1);
+}
+.news {
+    height: 40px;
+    width: 100px;
+    color: var(--gray2);
+    background: none;
+}
+button:hover {
+    transition: all 0.3s ease-out;
+    opacity: 0.5;
+    cursor: pointer;
+}
