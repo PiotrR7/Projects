@@ -1,0 +1,61 @@
+.about-us-box {
+    height: auto;
+    width: 90%;
+    margin: 10% 0;
+    padding: 60px;
+    border-radius: 24px;
+    background-color: white;
+
+    -webkit-box-shadow: 1px 0px 31px -21px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 0px 31px -21px rgba(66, 68, 90, 1);
+    box-shadow: 1px 0px 31px -21px rgba(66, 68, 90, 1);
+
+    display: none;
+    flex-direction: column;
+}
+.about-us-box>h1 {
+    font-family: "Rubik";
+    font-size: 50px;
+    letter-spacing: 1px;
+
+    color: rgb(27, 174, 112);
+}
+.about-us-box>p, .about-us-box>h2 {
+    font-family: "Montserrat";
+    font-size: 20px;
+    line-height: 1.5;
+    
+    padding: 20px 50px 0 50px;
+    
+    color: gray;
+}
+.about-us-box>p {
+    color: gray;
+    font-size: 1vw;
+}
+.about-us-box>h2 {
+    font-family: "Rubik";
+
+    color: rgb(27, 174, 112);
+}
+@media only screen and (max-width: 1500px) {
+    .about-us-box {
+        padding: 4%;
+        width: 100%;
+    }
+    .about-us-box>h1 {
+        font-size: 4vw;
+        text-align: center;
+    }
+    .about-us-box>h2 {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+    .about-us-box>p {
+        font-size: 2vw;
+    }
+    .about-us-box>p, .about-us-box>h2 {
+        line-height: 1.2;
+        padding: 10px;
+    }
+}
